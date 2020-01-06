@@ -1,18 +1,9 @@
 import React, {Component} from "react";
 
 
-let label = {
-    font: "inherit",
-    padding: "5px 10px",
-    display: "inline-block",
-    border: "none",
-    borderBottom: "solid 2px #ccc",
-    marginRight: "10px",
-    cursor: "pointer"
-};
+let label = {};
 
 let activeLabel = {
-    ...label,
     borderColor: "red"
 };
 
@@ -32,6 +23,7 @@ class Tabs extends Component{
             return(
                 <button
                     style={btnStyle}
+                    className= 'tabButton'
                     onClick={() => {this.setState({activeIndex: index}); this.props.filterView(index)}}>
                     {child.props.label}
                 </button>
@@ -39,8 +31,8 @@ class Tabs extends Component{
         });
 
         return(
-            <div>
-                <div>{tabs}</div>
+            <div className='tabStyle'>
+                <div className= 'tabStyle__tabs'>{tabs}</div>
                 {this.props.children[this.state.activeIndex]}
             </div>
         )

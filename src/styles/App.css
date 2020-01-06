@@ -81,6 +81,30 @@ container {
   padding: 10px;
 }
 
+/*  Tab Style */
+.tabStyle {
+  text-align: center;
+  width: 100%;
+}
+
+
+.tabStyle__tabs {
+  display: inline-block;
+  padding-bottom: 15px;
+}
+
+
+.tabButton {
+  font: inherit;
+  background-color: transparent;
+  padding: 5px 10px;
+  display: inline-block;
+  border: none;
+  border-bottom: 2px solid #CCC;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
 .btn {
   display: inline-block;
   border: none;

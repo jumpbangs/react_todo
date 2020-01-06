@@ -1,5 +1,7 @@
 import React, {Component} from "react";
 
+import PropTypes from 'prop-types';
+
 class AddTodoList extends Component{
     state = {
         title:''
@@ -39,5 +41,9 @@ class AddTodoList extends Component{
 const btnSubmit = {
     flex : '1'
 };
+
+AddTodoList.propTypes ={
+    value : PropTypes.string
+}
 
 export default AddTodoList;

@@ -1,12 +1,10 @@
 import React, {Component} from "react";
 
-
 let label = {};
 
 let activeLabel = {
     borderColor: "red"
 };
-
 
 class Tabs extends Component{
 

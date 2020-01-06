@@ -1,9 +1,10 @@
 import React, {Component} from "react";
+import PropTypes from 'prop-types';
+
 import TodoItem from "./TodoItem";
 
 class TodoList extends Component{
     render() {
-        console.log(this.props);
         return (
             this.props.todos.map((listItem) =>(
             // console.log(listItem)
@@ -11,6 +12,11 @@ class TodoList extends Component{
             ))
         );
     }
+}
+
+TodoList.propTypes = {
+    markComplete : PropTypes.func,
+    deleteItem : PropTypes.func
 }
 
 export default TodoList;

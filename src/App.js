@@ -67,7 +67,7 @@ class App extends Component{
     filterView = (value) => {
         let filter;
         if (value === 1){
-            filter = 'incompleted'
+            filter = 'inCompleted'
         }
         else if(value === 2){
             filter = 'completed'
@@ -86,7 +86,7 @@ class App extends Component{
         if(this.state.filterViews === 'completed'){
             result = this.state.todos.filter(val=>val.completed === true);
         }
-        else if( this.state.filterViews === 'incompleted'){
+        else if( this.state.filterViews === 'inCompleted'){
             result = this.state.todos.filter(val=>val.completed === false);
         }
         else{
@@ -98,9 +98,6 @@ class App extends Component{
                 return todoItem.title.toLowerCase().includes(this.state.searchKeyword.toLowerCase());
             });
         }
-
-
-        console.log(result);
 
 
         return(

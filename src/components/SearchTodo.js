@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import PropTypes from 'prop-types';
 
 class SearchTodo extends Component{
     render() {
@@ -15,5 +16,9 @@ class SearchTodo extends Component{
         )
     }
 }
+
+SearchTodo.propTypes = {
+  searchedItem: PropTypes.array
+};
 
 export default SearchTodo;

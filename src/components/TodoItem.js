@@ -1,5 +1,7 @@
 import React, {Component} from "react";
 
+import PropTypes from 'prop-types';
+
 class TodoItem extends Component{
 
     getStyle= () =>{
@@ -21,5 +23,10 @@ class TodoItem extends Component{
         )
     }
 }
+
+TodoItem.propTypes = {
+    onChange : PropTypes.func,
+    onClick: PropTypes.func
+};
 
 export default TodoItem;

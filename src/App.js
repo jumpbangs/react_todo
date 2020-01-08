@@ -67,10 +67,10 @@ class App extends Component{
     filterView = (value) => {
         let filter;
         if (value === 1){
-            filter = 'inCompleted'
+            filter = 'completed'
         }
         else if(value === 2){
-            filter = 'completed'
+            filter = 'inCompleted'
         }
         else {
             filter = 'all'

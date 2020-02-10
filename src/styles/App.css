@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif ;
+  line-height: 1.4;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+
+container {
+  padding: 0 1rem;
+}
+
+/* Header */
+
+.headerStyle {
+  background : #333;
+  color:#fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.linkStyle {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+}
+
+/* To-Do Items */
+.btnStyle {
+  background: #ff0000;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  float: right;
+}
+
+
+/*  Item List */
+.itemList {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-bottom: 1px #ccc dotted;
+  font-size: 18px;
+}
+
+.itemList input {
+  margin-right: 15px;
+}
+
+
+
+/* Add to-do list */
+.formStyle {
+  display: flex;
+  padding: 10px;
+}
+
+.inputStyle {
+  flex: 10;
+  padding: 15px;
+}
+
+
+/* Search Bar*/
+.searchBarStyle{
+  display: flex;
+  padding: 10px;
+}
+.searchStyle {
+  flex: 1;
+  padding: 10px;
+}
+
+/*  Tab Style */
+.tabStyle {
+  text-align: center;
+  width: 100%;
+}
+
+
+.tabStyle__tabs {
+  display: inline-block;
+  padding-bottom: 15px;
+}
+
+
+.tabButton {
+  font: inherit;
+  background-color: transparent;
+  padding: 5px 10px;
+  display: inline-block;
+  border: none;
+  border-bottom: 2px solid #CCC;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background: #555;
+  padding: 7px 20px;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+}
+
+.btn:hover{
+  background: #666;
+}
+
+
+/*
+  Footer
+ */
+
+.footerStyle{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 150px;
+  width: 100%;
+  background-color: #333;
+  color: white;
+}

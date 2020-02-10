@@ -24,6 +24,7 @@ after_success:
   git push -f -q https://<me>:$github_token@github.com/<me>/<myrepo>-gh-pages gh-pages &>/dev/null
   cd "$TRAVIS_BUILD_DIR"
   fi
+
 #deploy:
 #  provider: pages
 #  skip_cleanup: true

@@ -1,4 +1,4 @@
-import React, {Children, Component} from 'react';
+import React, { Component} from 'react';
 import './styles/App.css';
 
 //Import from Components
@@ -51,7 +51,7 @@ class App extends Component{
     deleteTodoItem = (id) =>{
         this.setState({todos:[...this.state.todos.filter(todo => todo.id !== id)]});
         this.setState({searchedItems:[...this.state.searchedItems.filter(todo => todo.id !== id)]});
-    }
+    };
 
     searchItem = (ev) => {
         let word = ev.target.value;

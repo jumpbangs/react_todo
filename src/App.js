@@ -1,5 +1,6 @@
 import React, { Component} from 'react';
 import './styles/App.css';
+import './styles/bootstrap-grid.min.css'
 
 //Import from Components
 import TodoList from "./components/TodoList";
@@ -10,6 +11,7 @@ import Tabs from "./components/layout/Tabs";
 
 import TodoContent from "./data/Todos";
 import uuid from 'uuid';
+import Footer from "./components/layout/Footer";
 
 
 const Tab = ({children}) => <div>{children}</div>;
@@ -130,8 +132,8 @@ class App extends Component{
                             deleteItem = {this.deleteTodoItem}
                         />
                     </Tab>
-
                 </Tabs>
+                <Footer />
             </div>
 
         )

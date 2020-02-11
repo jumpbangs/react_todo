@@ -8,12 +8,19 @@ function Header() {
             <div className='container '>
                 <div className='row mt-3'>
                     <div className='col-8'>
-                        <h1>Todo List </h1>
+                        <h1>
+                            <a href="https://jumpbangs.github.io/react_todo/">
+                                Todo List
+                            </a>
+                        </h1>
                     </div>
                     <div className='col-3'>
                         <ul>
                             <li>
-                                Github
+                                <a href="https://github.com/jumpbangs/react_todo">
+                                    Github Repo Page
+                                </a>
+
                             </li>
                             <li>
                                 Links

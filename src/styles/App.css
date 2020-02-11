@@ -133,3 +133,11 @@ container {
   background-color: #333;
   color: white;
 }
+
+.footerStyle a{
+  color: white;
+}
+
+.footerStyle a:hover{
+  cursor: pointer;
+}

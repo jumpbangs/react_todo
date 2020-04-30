@@ -1,38 +1,33 @@
 import React from "react";
+import { Grid } from "@material-ui/core";
 
-
-function Header() {
-
-    return(
-        <footer className='footerStyle'>
-            <div className='container '>
-                <div className='row mt-3'>
-                    <div className='col-8'>
-                        <h1>
-                            <a href="https://jumpbangs.github.io/react_todo/">
-                                Todo List
-                            </a>
-                        </h1>
-                    </div>
-                    <div className='col-3'>
-                        <ul>
-                            <li>
-                                <a href="https://github.com/jumpbangs/react_todo">
-                                    Github Repo Page
-                                </a>
-
-                            </li>
-                            <li>
-                                Links
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-    )
+function Footer() {
+  return (
+    <footer className="footerStyle">
+      <Grid container direction="row" spacing={3}>
+        <Grid item xs={7}>
+          <h3>
+            <a
+              className="footerLogo"
+              href="https://jumpbangs.github.io/react_todo/"
+            >
+              Todo List
+            </a>
+          </h3>
+        </Grid>
+        <Grid item xs={5}>
+          <ul>
+            <li>
+              <a href="https://github.com/jumpbangs/react_todo">
+                Github Repo Page
+              </a>
+            </li>
+            <li>Links</li>
+          </ul>
+        </Grid>
+      </Grid>
+    </footer>
+  );
 }
 
-
-export default Header;
+export default Footer;

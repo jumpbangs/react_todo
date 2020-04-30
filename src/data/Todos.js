@@ -1,27 +1,26 @@
-import uuid from "uuid";
+import { v4 as uuidv4} from "uuid";
 
 const TodoContent = [
-    {
-        id: uuid.v4(),
-        title: 'Take the trash',
-        completed: false,
-    },
-    {
-        id: uuid.v4(),
-        title: 'Clean Room',
-        completed: false,
-    },
-    {
-        id: uuid.v4(),
-        title: 'Meeting in the morning',
-        completed: false,
-    },
-    {
-        id: uuid.v4(),
-        title: 'Do Shopping',
-        completed: false,
-    }
-]
-
+  {
+    id: uuidv4(),
+    title: "Take the trash",
+    completed: false,
+  },
+  {
+    id: uuidv4(),
+    title: "Clean Room",
+    completed: false,
+  },
+  {
+    id: uuidv4(),
+    title: "Meeting in the morning",
+    completed: false,
+  },
+  {
+    id: uuidv4(),
+    title: "Do Shopping",
+    completed: false,
+  },
+];
 
 export default TodoContent;

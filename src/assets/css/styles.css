@@ -1,0 +1,93 @@
+/* Header */
+.headerStyle {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.linkStyle {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+}
+
+/* Search bar */
+.searchbarStyle {
+  padding: 20px;
+}
+
+/* Add Todo Input */
+.formStyle {
+  padding: 0px 50px;
+}
+
+/*  Tab Style */
+.tabStyle {
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+.tabStyle__tabs {
+  display: inline-block;
+  padding-bottom: 15px;
+}
+
+.tabButton {
+  font: inherit;
+  background-color: transparent;
+  padding: 5px 10px;
+  display: inline-block;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background: #555;
+  padding: 7px 20px;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background: #666;
+}
+
+.tabStyle {
+  flex-grow: 1;
+  max-width: 500;
+}
+
+.footerStyle {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+}
+
+.footerStyle a {
+  color: white;
+}
+
+.footerStyle a:hover {
+  cursor: pointer;
+}
+
+.footerLogo {
+  padding: 10px 30px;
+  text-decoration: none;
+}
+
+.listStyle {
+  max-height: 100%;
+  overflow-y: auto;
+}
